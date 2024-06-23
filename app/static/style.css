@@ -1,0 +1,81 @@
+.frontal{
+    background-color: rgb(107, 14, 57);
+    display: inline-block;
+    justify-items: auto;
+}
+.help-text{
+    color: rgba(221, 199, 210, 0.492);
+    display: block;
+    justify-content: center;
+    padding: 10px 200px;
+    font-size: larger;
+}
+.input-field{
+    justify-content: end;
+    display: block;
+    padding: 10px 350px;
+}
+.input-field textarea{
+    height: 500px;
+}
+.input-field textarea:focus{
+    background-color: rgb(115, 107, 153);
+    color:bisque;
+    font-family: sans-serif;
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 15px;
+    box-shadow: 0 12px 16px 0 rgba(85, 181, 50, 0.24),0 17px 50px 0 rgba(190, 16, 16, 0.19);
+}
+.input-range input{
+    margin: 0;
+    transform: translate(380%);  
+}
+.submit_btn input{
+    display: block;
+    margin: 10px;
+    transform: translate(310%);
+    background-color: rgb(242, 234, 234);
+    color: rgb(214, 39, 118);
+    border: 2px solid white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 25px;
+    height: 50px;
+    width: 200px;
+}
+.input-range input:focus{
+    background-color: rgb(110, 197, 232);
+    border: 2px solid white;
+    border-radius: 15px;
+}
+.submit_btn input:hover{
+    background-color: rgb(111, 135, 50);
+    border: 2px solid rgb(111, 135, 50);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    color: aliceblue;
+}
+.summary-body{
+    background-color: rgb(107, 14, 57);
+    color: rgba(255, 255, 255, 0.685);
+    display: inline-block;
+}
+.summary-body a{
+    background-color: bisque;
+    text-decoration: none;
+    border: 2px solid white;
+    cursor: pointer;
+    border-radius: 18px;
+    color: rgb(51, 137, 212);
+    float: right;
+    overflow: hidden;
+    height: 20px;
+    width: 85px;
+    text-align: center;
+}.summary-body a:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    transform: translate(0,2px);
+    color:black;
+    background-color: green;
+    border: none;
+}

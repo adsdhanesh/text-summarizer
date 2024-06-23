@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% if title %}
+    <title>{{ title }}</title>
+    {% else %}
+    <title>Text Summarizer</title>
+    {% endif %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"/>
+  </head>
+  <body class="frontal">
+    {% block content %}
+    <h1>Let's summarize some text</h1>
+    <div class="help-text">
+        <h2>How does this work?</h2>Take some text and paste it into the box below. Then select the number of sentences you want included in your summary. The model uses <code>extractive text summarization</code> to generate a summary. This means that the model looks at the most important words in the document and calculates a mathematical representation of the text. <br/> <br/>
+    </div>
+    <form class="forms" action="" method="post" novalidate>
+        {{ form.hidden_tag() }}
+        <p class="input-field">
+            {{ form.text(cols=100,rows=20, placeholder='Enter your text here...') }}
+        </p>
+        <p class="input-range">{{ form.num_sentences }}</p>
+        <p class="submit_btn">{{ form.submit(class="btn btn-primary btn-lg px-4 gap-3") }}</p>
+    </form>
+    {% endblock %}
+  </body>
+</html>
